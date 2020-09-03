@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const expect      = require('chai').expect;
@@ -6,6 +5,7 @@ const cors        = require('cors');
 
 const fccTestingRoutes  = require('./routes/fcctesting.js');
 const runner            = require('./test-runner');
+const config            = require('./utils/config')
 
 const app = express();
 
@@ -31,12 +31,12 @@ app.use(function(req, res, next) {
     .send('Not Found');
 });
 
-const portNum = process.env.PORT || 3000;
+const portNum = config.PORT || 3000;
 
 // Start our server and tests!
 app.listen(portNum, () => {
   console.log(`Listening on port ${portNum}`);
-  if (process.env.NODE_ENV==='test') {
+  if (config.NODE_ENV==='test') {
     console.log('Running Tests...');
     setTimeout(function () {
       try {

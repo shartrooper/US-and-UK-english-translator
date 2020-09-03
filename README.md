@@ -14,9 +14,8 @@
 1. All 20 unit tests are complete and passing. See `/tests/1_unit-tests.js` for the sentences you should write tests for.
 1. All 4 functional tests are complete and passing. See `/tests/2_functional-tests.js` for the functionality you should write tests for.
 
-### Testing and additional notes
+### Testing and Notes
 
-* All logic can go into `public/translator.js`.
-* Create all of the unit/functional tests in `tests/1_unit-tests.js` and `tests/2_functional-tests.js`.
-* To run the tests on Repl.it, set NODE_ENV to test without quotes in the .env file.
-* To run the tests in the console, use the command npm run test. To open the Repl.it console, press Ctrl+Shift+P (Cmd if on a Mac) and type "open shell".
+* All main logic into `public/translator.js`.
+* All of the unit/functional tests in `tests/1_unit-tests.js` and `tests/2_functional-tests.js`. Still work in progress.
+* To run the project,`npm start` for standard with testing or `npm run watch` with nodemon in dev mode. `npm run test` with test mode.
