@@ -73,7 +73,7 @@ const translator = {
     },
     handleWordsAndSpelling: (target, dictionary) => {
         for (let word in dictionary) {
-            let re = new RegExp(word, 'gi');
+            let re = new RegExp(`\\b${word}\\b`, 'gi');
             target = target.replace(re, `<span class="highlight">${dictionary[word]}</span>`);
         }
         return target;
@@ -145,7 +145,7 @@ try {
         britishOnly,
         americanToBritishSpelling,
         americanToBritishTitles,
-        test_translator: translator,
+        translator,
         addCapitalLetterTitles,
         invertKeysWithValue
     }

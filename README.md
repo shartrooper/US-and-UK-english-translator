@@ -16,6 +16,5 @@
 
 ### Testing and Notes
 
-* All main logic into `public/translator.js`.
-* All of the unit/functional tests in `tests/1_unit-tests.js` and `tests/2_functional-tests.js`. Still work in progress.
+* All main logic into `public/translator.js`. 
 * To run the project,`npm start` for standard with testing or `npm run watch` with nodemon in dev mode. `npm run test` with test mode.

@@ -59,7 +59,7 @@ export const britishOnly = {
   "child-minder": "babysitter",
   "chinwag": "chat",
   "chippy": "fish-and-chip shop",
-  "chip shop": "fish-and-chip shop",
+  //"chip shop": "fish-and-chip shop",
   "chuffed": "pleased",
   "chunder": "vomit",
   "clapped out": "clapped out",

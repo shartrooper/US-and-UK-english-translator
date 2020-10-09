@@ -2,3 +2,5 @@
 .env
 .glitch-assets
 node_modules/
+start test.bat
+start nodemon.bat
